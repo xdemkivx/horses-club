@@ -1,0 +1,20 @@
+@import './abstracts/reset';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './components/footer';
+@import './components/header';
+@import './components/navbar';
+@import './components/header';
+@import './components/carent';
+@import './components/icons';
+@import './components/action';
+@import './components/newsletter';
+@import './components/mobileNav';
+
+
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+ };
