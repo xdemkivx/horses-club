@@ -5,10 +5,12 @@
 .menu-toggle {
   display: none;
   flex-direction: column;
-  cursor: pointer;
   position: absolute;
-  top: 18%;
-  left: 90%;
+  height: 32px;
+  width: 32px;
+  top: 20%;
+  right: 5%;
+  z-index: 4;
 }
 
 .menu-toggle span {
@@ -19,26 +21,31 @@
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
+.menu-toggle span:has(.show){
+  background: white;
+}
+
 .show{
+  width: 360px;
+  height: 100vh;
   display: flex;
   position: absolute;
+  gap: 30px;
+  right: 0;
   top: 0;
-  left: 0;
-  transform: translate(50%, 41%);
   z-index: 3;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
   background-color: #000;
   opacity: .8;
+  justify-content: center;
  a{
    list-style: none;
    text-decoration: none;
    outline: none;
    color: #939292;
-   padding: 10px;
-   gap: 10px;
-   border: 1px gray;
+ }
+ li{
+  padding: 10px;
+  border: 1px gray;
  }
  
 }

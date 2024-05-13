@@ -22,6 +22,7 @@
   text-transform: uppercase;
   color: #000000;
 }
+
 .caren__item{
   h2{
     padding: 20px;
@@ -45,9 +46,10 @@
 // }
 @media screen and (min-width: 600px) {
   .carent__item--wraper {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
   }
 }
 @media screen and (min-width: 1190px) {
