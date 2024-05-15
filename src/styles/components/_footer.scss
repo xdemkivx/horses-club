@@ -42,6 +42,24 @@
   justify-content: center;
   gap: 15px ;
 }
+.footer__img{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.menu__category-line{
+  opacity: 0.6;
+  position: absolute;
+  left: 30%;
+  background-color: #939292;
+  width: 1px;
+  height: 124px;
+}
+@media(max-width: 609px){
+  .menu__category-line{
+    display: none;
+  }
+}
 @media(min-width: 609px){
   .footer__wrapper{
     flex-direction: row;

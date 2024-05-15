@@ -19,6 +19,8 @@
   input{
     position: relative;
     padding-right: 30px;
+    border: none;
+    height: 30px;
   }
   
 }
@@ -29,10 +31,11 @@
 }
 .input::after{
   content: '\2709'; 
-    position: absolute;
+    position: relative;
     content: "✉";
-    position: absolute;
-    transform: translateX(-157%);
+    right: 15%;
+   
+    
 
 
 

@@ -28,7 +28,14 @@
     font-size: 13px;
     line-height: 18px;  
   }
-}
+  :hover{
+    color: grey;
+    
+  }
+ }
+// a:hover{
+//   color: grey;
+// }
 @media(max-width: 609px){
   .header__nav{
     display: none;
@@ -82,4 +89,8 @@
   font-size: 13px;
   line-height: 18px;  
   z-index: 2;
+}
+
+.container__header-btn:hover{
+  color: gray;
 }
