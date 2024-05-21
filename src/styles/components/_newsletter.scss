@@ -29,12 +29,17 @@
     flex-direction: row;
   }
 }
+.input{
+  position: relative;
+}
 .input::after{
   content: '\2709'; 
-    position: relative;
+    position: absolute;
     content: "✉";
-    right: 15%;
+    right: 15px;
     text-align: center;
+    top: 25%;
+  
    
 }
 
