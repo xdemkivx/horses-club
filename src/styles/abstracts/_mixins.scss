@@ -9,3 +9,33 @@
     justify-content: center;
     align-items: center;
 }
+@mixin text($size, $height, $fw, $color){
+    font-size: $size;
+    line-height: $height;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin philosopher {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 21px;
+    color: #363434;
+}
+@mixin philosopherbold {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+    color: #363434;
+}
+@mixin robotoreg{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}   

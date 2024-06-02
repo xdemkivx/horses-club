@@ -1,0 +1,60 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.contact-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+.contact-card h2 {
+  margin-top: 0;
+}
+.contact-card .info-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #f1c40f;
+}
+.contact-card .info-item i {
+  margin-right: 10px;
+}
+.contact-card .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-card .social-icons a {
+  margin: 0 10px;
+  color: #f1c40f;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-card .social-icons a:hover {
+  color: #d4ac0d;
+}
+.social__icons--wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4ac0d;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d4ac0d;
+  border-radius: 50px;
+  /* Rectangle 115 */
+
+
+
+}
+.social__icons--wrapper .fab {
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fafafa !important;
+width: 18px !important;
+height: 18px !important;
+}

@@ -1,0 +1,36 @@
+.splide{
+  display: flex;
+  min-height: 450px;
+}
+.splide__arrow{
+background: linear-gradient(180deg, #9BCFFF 0%, #FFE456 0.01%, #FFB800 100%);
+box-shadow: 0px 1px 0px #C89C00;
+}
+.splide__arrow{
+  top: 88% !important;
+}
+.progress-container {
+  position: absolute;
+  width: 60px!important;
+  bottom: 48px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.splide__pagination {
+  display: none; /* Приховуємо стандартну пагінацію */
+}
+.progress-container {
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 20px;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #fbc02d, #f57c00);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.25s;
+}

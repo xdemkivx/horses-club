@@ -19,3 +19,35 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   this.classList.toggle('active');
 });
 
+// const mySlider = new Splide ('#mySlider',{
+//   type: 'loop',
+//   perPage: 2,
+//   gap: '30px',
+//   pagination: true,
+// })
+// mySlider.mount()
+
+// const progressBar = document.querySelector('.progress-bar');
+// mySlider.on('mounted move', function () {
+//   var end = splide.Components.Controller.getEnd() + 1;
+//   var rate = Math.min((splide.index + 1) / end, 1);
+//   progressBar.style.width = String(100 * rate) + '%';
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#mySlider', {
+      type      : 'loop',
+      perPage   : 2,
+      pagination: true,
+  }).mount();
+
+  var progressBar = document.querySelector('.progress-bar');
+
+  splide.on('mounted move', function () {
+      const end = splide.Components.Controller.getEnd() + 1;
+      const rate = Math.min((splide.index + 1) / end, 1);
+      progressBar.style.width = String(100 * rate) + '%';
+  });
+});

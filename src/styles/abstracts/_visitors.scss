@@ -1,0 +1,40 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.visitors{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff
+}
+.visitors__title{
+  padding-bottom: 60px;
+  @include philosopher;
+  text-align: center;
+
+}
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.masonry img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 420px) {
+  .masonry {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 5px;
+  }
+  .masonry img {
+      border-radius: 5px;
+  }
+}

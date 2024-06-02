@@ -1,17 +1,24 @@
 @import './abstracts/reset';
 @import './abstracts/variables';
 @import './abstracts/mixins';
-@import './components/footer';
-@import './components/header';
-@import './components/navbar';
-@import './components/header';
-@import './components/carent';
-@import './components/icons';
-@import './components/action';
-@import './components/newsletter';
-@import './components/mobileNav';
+@import './abstracts/btn';
+@import './abstracts/header';
+@import './abstracts/visitors';
+@import './components/splide';
+@import './components/questions';
+@import './components/directions';
+@import './components/choose';
+@import './components/our';
+@import './components/feedback';
+@import './components/contacts';
 
 
+
+
+
+// p{
+//   @include text(40px,1,900,red);
+// }
 
 .wrapper {
   width: 100%;
