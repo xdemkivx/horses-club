@@ -39,15 +39,16 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function () {
   const splide = new Splide('#mySlider', {
       type      : 'loop',
-      perPage   : 2,
+      perPage   : 1,
+      padding: '5rem',
       pagination: true,
   }).mount();
 
-  var progressBar = document.querySelector('.progress-bar');
+  // var progressBar = document.querySelector('.progress-bar');
 
-  splide.on('mounted move', function () {
-      const end = splide.Components.Controller.getEnd() + 1;
-      const rate = Math.min((splide.index + 1) / end, 1);
-      progressBar.style.width = String(100 * rate) + '%';
-  });
+  // splide.on('mounted move', function () {
+  //     const end = splide.Components.Controller.getEnd() + 1;
+  //     const rate = Math.min((splide.index + 1) / end, 1);
+  //     progressBar.style.width = String(100 * rate) + '%';
+  // });
 });
