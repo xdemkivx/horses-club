@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../../dist/img/bg_choose.png");
+  background-image: url("../../../dist/img/bg_directions.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -14,13 +14,20 @@
 }
 .directions::before{
   content: '';
-  height: 99%;
   width: 100%;
-  background-image: url("../../../dist/img/bg_sky.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 89px;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  mask-image: url('../../../dist/img/bg_sky.png');
+  -webkit-mask-image: url('../../../dist/img/bg_sky.png');
+  mask-size: cover; /* Изменение размера маски, чтобы она покрывала весь элемент */
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
   z-index: 2;
 }
 .directions__img--girl{
@@ -28,14 +35,14 @@
   min-height: 149px;
   position: absolute;
   left: 0;
-  bottom: 3%;
+  bottom: 0;
 }
 .directions__img--boy{
   min-width: 98px;
   min-height: 141px;
   position: absolute;
   right: 0;
-  bottom: 3%;
+  bottom: 0;
   transform: translate(10px, 0px);
 }
 .directions__conteiner {
@@ -47,7 +54,6 @@
   padding: 65px 5px 0px 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   text-align: center;
-  margin-bottom: 60px;
 }
 .directions__title{
   padding-bottom: 60px;
@@ -98,4 +104,8 @@ font-weight: 400;
 font-size: 13px;
 line-height: 20px;
 color: #7E7E7E;
+}
+.btn_directions{
+  position: relative;
+ top: 60px;;
 }
