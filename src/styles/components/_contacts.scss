@@ -1,16 +1,32 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
+.contacts__card{
+  position: relative;
+}
 .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
+  width: 200px;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 75%);
 }
 .contact-card h2 {
   margin-top: 0;
+}
+.contact-card-line{
+  display: block;
+  width: 26px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: var(--color-green);
 }
 .contact-card .info-item {
   display: flex;
@@ -21,10 +37,15 @@
 .contact-card .info-item i {
   margin-right: 10px;
 }
+.info-item p {
+  @include robotoreg;
+  color: var(--color-black);
+}
 .contact-card .social-icons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  gap: 13px;
 }
 .contact-card .social-icons a {
   margin: 0 10px;
@@ -51,6 +72,9 @@
 
 
 }
+.fab{
+  position: relative;
+}
 .fab::before {
   display: flex;
   position: absolute;
@@ -65,7 +89,9 @@
   flex-direction: column;
 }
 .map-conteiner{
-  width: clamp(320px, 100%, 1920px); ;
+  position: relative;
+  width: clamp(320px, 100%, 1920px);
+  margin-bottom: 150px;
   iframe {
     width: 100%;
     height: 720px;
