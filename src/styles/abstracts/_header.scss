@@ -44,4 +44,84 @@
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  z-index: 3;
+}
+.header::after{
+  content:'';
+  width: 187px;
+  height: 188px;
+  background-image: url('../../../dist/img/header-horse.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-6%, 0%);
+  z-index: 2;
+
+}
+.heder__span-line::before{
+  content:'';
+  width: 180px;
+  height: 81px;
+  background-image: url('../../../dist/img/header-house.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-15%, -50%);
+  
+}
+.heder__span-line::after{
+  content:'';
+  width: 75px;
+  height: 24px;
+  background-image: url('../../../dist/img/header-birthd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(22px, 92px);  
+}
+.header__btn::before{
+  content:'';
+  width: 146px;
+  height: 108px;
+  background-image: url('../../../dist/img/header-forest.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-100px, -52px);
+ 
+}
+.header__btn::after{
+  content:'';
+  width: 44px;
+  height: 93px;
+  background-image: url('../../../dist/img/header-left-three.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 0);
+  z-index: 3;
+ 
+}
+.header__bg-img::before{
+  content:'';
+  width: 34px;
+  height: 131px;
+  background-image: url('../../../dist/img/header-right-tree.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 0);
+  z-index: 3;
 }
