@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../dist/img/bg-header.png");
+  background-image: url("/dist/img/bg-header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,19 +38,16 @@
   bottom: -1px;
   left: 0;
   background: white;
-  mask-image: url('../../../dist/img/bg_sky.png');
-  -webkit-mask-image: url('../../../dist/img/bg_sky.png');
+  mask-image: url('/dist/img/bg_sky.png');
   mask-size: cover; /* Изменение размера маски, чтобы она покрывала весь элемент */
-  -webkit-mask-size: cover;
   mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
   z-index: 3;
 }
 .header::after{
   content:'';
   width: 187px;
   height: 188px;
-  background-image: url('../../../dist/img/header-horse.png');
+  background-image: url('/dist/img/header-horse.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -64,7 +61,7 @@
   content:'';
   width: 180px;
   height: 81px;
-  background-image: url('../../../dist/img/header-house.png');
+  background-image: url('/dist/img/header-house.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -77,7 +74,7 @@
   content:'';
   width: 75px;
   height: 24px;
-  background-image: url('../../../dist/img/header-birthd.png');
+  background-image: url('/dist/img/header-birthd.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -89,7 +86,7 @@
   content:'';
   width: 146px;
   height: 108px;
-  background-image: url('../../../dist/img/header-forest.png');
+  background-image: url('/dist/img/header-forest.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -102,7 +99,7 @@
   content:'';
   width: 44px;
   height: 93px;
-  background-image: url('../../../dist/img/header-left-three.png');
+  background-image: url('/dist/img/header-left-three.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -116,7 +113,7 @@
   content:'';
   width: 34px;
   height: 131px;
-  background-image: url('../../../dist/img/header-right-tree.png');
+  background-image: url('/dist/img/header-right-tree.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -130,7 +127,7 @@
     content:'';
     width: 94px;
     height: 90px;
-    background-image: url('../../../dist/img/header-mini-horse.png');
+    background-image: url('/dist/img/header-mini-horse.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
