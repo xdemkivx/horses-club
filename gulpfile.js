@@ -36,8 +36,8 @@ const minJs = () => gulp.src('./src/scripts/*js')
   .pipe(gulp.dest('./dist'))
 
 
-export const build = gulp.series(cleanDist,buildStyles, minImg, minJs);
-
+export const build = gulp.series(cleanDist,buildStyles, minJs);
+// minImg забрал з былда
 export const dev = gulp.series(build, () => {
   BS.init({
     server: {

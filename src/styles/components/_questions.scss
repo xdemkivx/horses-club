@@ -5,7 +5,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  background-image: url('../../../dist/img/bg-question.png');
+  background-image: url('../../img/bg-question.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,8 +21,8 @@
   top: -1px;
   left: 0;
   background: white;
-  mask-image: url('../../../dist/img/bg-sky-question.png');
-  -webkit-mask-image: url('../../../dist/img/bg-sky-question.png');
+  mask-image: url('../../img/bg-sky-question.png');
+  -webkit-mask-image: url('../../img/bg-sky-question.png');
   mask-size: cover; /* Изменение размера маски, чтобы она покрывала весь элемент */
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
@@ -106,8 +106,8 @@
   bottom: 0;
   left: 0;
   background: white;
-  mask-image: url('../../../dist/img/bg_sky.png');
-  -webkit-mask-image: url('../../../dist/img/bg_sky.png');
+  mask-image: url('../../img/bg_sky.png');
+  -webkit-mask-image: url('../../img/bg_sky.png');
   mask-size: cover; /* Изменение размера маски, чтобы она покрывала весь элемент */
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;

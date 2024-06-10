@@ -31,4 +31,67 @@
   padding: 0px 10px;
   text-align: center;
 }
+.our__image-container{
+  display: none;
+}
+@media(min-width: 480px){
+  .our__club{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .our__club--title{
+    text-align: center;
+  }
+  .club__items--wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+}
+@media(min-width: 768px){
+  .our__club{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
+   column-gap: 20px;
+   row-gap: 35px;
+  }
+  .our__club--title{
+    grid-column: 1 / -1;
+  }
+  .club__text--botom{
+    grid-column: 1 / -1;
+  }
+  .our__image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .our__image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+}
 
+@media(min-width: 1920px){
+  .our__club{
+    max-width: 1438px;
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr ;
+   column-gap: 20px;
+   row-gap: 35px;
+  }
+  .our__club--title{
+    grid-column: 1 / -1;
+  }
+  .club__text--botom{
+    grid-column: 2 / -1;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  
+  
+}
