@@ -42,3 +42,96 @@
   @include robotoreg;
   padding: 90px 0 18px 0;
 }
+
+@media(min-width: 480px){
+  .footer__nav{
+    margin-top: 20px;
+  }
+  .footer__nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media(min-width: 768px){
+  .footer {
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "logo nav button"
+        "info info info";
+        gap: 0 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo img {
+    margin-right: 10px;
+}
+
+.footer__nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .btn {
+  grid-area: button;
+  background: #000;
+  color: #fff;
+  border: 1px solid yellow;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: none;
+  text-transform: none;
+}
+
+.footer__info {
+  grid-area: info;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+
+.footer__text {
+    margin: 0;
+}
+
+.year {
+    display: none;
+}
+}
+
+@media(min-width: 1920px){
+  .footer {
+    position: relative;
+    z-index: 1;
+    padding: 0 500px;
+}
+
+}
