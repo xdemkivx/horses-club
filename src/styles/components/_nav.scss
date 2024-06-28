@@ -1,6 +1,4 @@
-.nav__wrapper{
-background-color: rgb(128 128 128 / 50%);
-}
+
 .nav__desctop {
  display: none;
 }
@@ -28,4 +26,7 @@ background-color: rgb(128 128 128 / 50%);
   .nav__desctop{
     display: flex;
   }
+  .nav__wrapper{
+    background-color: rgb(128 128 128 / 50%);
+    }
 }
