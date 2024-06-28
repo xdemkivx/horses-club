@@ -39,3 +39,8 @@
       border-radius: 5px;
   }
 }
+@media (min-width: 1000px) {
+  .masonry {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

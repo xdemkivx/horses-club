@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 10;
 }
 .nav__wrapper{
   position: absolute;
@@ -15,9 +16,9 @@
   top: 0;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 10px;
-  z-index: 3;
+  z-index: 6;
 }
 .logo{
   img{
@@ -103,6 +104,11 @@
 //     display: flex;
 //   }
 // }
+@media(min-width: 320px){
+  .menu-toggle{
+    display: flex;
+  }
+}
 @media(min-width: 480px){
   .menu-toggle{
     display: flex;

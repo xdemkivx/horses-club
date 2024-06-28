@@ -1,0 +1,31 @@
+.nav__wrapper{
+background-color: rgb(128 128 128 / 50%);
+}
+.nav__desctop {
+ display: none;
+}
+.nav__desctop--items {
+  display: flex;
+  gap: 15px;
+  a{
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #202020;
+  }
+}
+
+
+
+@media(min-width: 768px){
+  .nav__desctop{
+    display: flex;
+  }
+}

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(event) {
     if (!menuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
       mobileNav.classList.remove('show');
+      menuToggle.classList.remove('active');
     }
   });
 });
@@ -51,4 +52,12 @@ document.addEventListener('DOMContentLoaded', function () {
   //     const rate = Math.min((splide.index + 1) / end, 1);
   //     progressBar.style.width = String(100 * rate) + '%';
   // });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#mySlider__feedback', {
+    type       : 'slide',
+    perPage    : 2, // Показувати по два слайда
+    fixedWidth : 400, // Фіксована ширина кожного слайда
+    fixedHeight: 300, // Фіксована висота кожного слайда
+  }).mount();
 });
