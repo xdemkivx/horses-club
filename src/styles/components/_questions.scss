@@ -21,7 +21,7 @@
   left: 0;
   background: white;
   mask-image: url('/dist/img/bg-sky-question.png');
-  mask-size: cover; /* Изменение размера маски, чтобы она покрывала весь элемент */
+  mask-size: cover; 
   mask-repeat: no-repeat;
 }
 .form-container {
@@ -77,11 +77,12 @@
 .form-container .checkbox-container a:hover {
   text-decoration: underline;
 }
-.questions__img{
+.questions__img {
   position: absolute;
   right: 50%;
-  transform: translate(50%, 0px);
-  width: 309px;
+  transform: translate(50%, 0);
+  width: 367px;
+  height: 400px;
   bottom: 0;
 }
 // .questions__img2{
@@ -129,11 +130,8 @@
     margin-top: 110px;
   }
   .questions__img {
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, 0);
-    width: 309px;
-    bottom: 0;
+    width: 400px;
+    height: 476px;
 }
   .form-container button {
     padding: 13px 124px;
